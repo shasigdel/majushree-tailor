@@ -97,9 +97,7 @@ html, body, #root, .App {
   margin-top: 20px;
   display: flex;
   justify-content: center;
-}
-
-/* Footer Styles */
+}/* Footer Styles */
 .footer {
   background-color: #1a1a1a; /* Darker background for the footer */
   color: white; /* White text for contrast */
@@ -109,22 +107,36 @@ html, body, #root, .App {
   bottom: 0;
   width: 100%;
   font-family: 'Lato', sans-serif; /* Applying the new font */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-around; /* Space between the sections */
+  flex-wrap: wrap; /* Wrap the sections if the screen size is small */
 }
 
-.footer .contact-info h2 {
+.contact-info {
+  margin: 20px; /* Padding around the sections */
+}
+
+.contact-info h2 {
   margin: 10px 0;
   font-weight: 700; /* Bold font weight */
 }
 
-.footer .contact-info p {
+.contact-info p {
   margin: 5px 0;
 }
 
-.footer a {
+.contact-info a {
   color: #61dafb;
   text-decoration: none;
+  display: flex; /* Flexbox to align icon and text */
+  align-items: center;
 }
 
-.footer a:hover {
+.contact-info a svg.icon {
+  margin-right: 8px; /* Space between the icon and the text */
+  fill: white; /* Make SVG icons white */
+}
+
+.contact-info a:hover {
   text-decoration: underline;
 }
