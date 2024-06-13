@@ -1,0 +1,130 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Merriweather:wght@400;700&display=swap');
+
+/* General Styles */
+html, body, #root, .App {
+  height: 100%;
+  margin: 0;
+  font-family: 'Lato', sans-serif; /* Applying the new font */
+  color: #fff; /* White text for better readability */
+  background-color: #2c2c2c; /* Dark background for an elegant look */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #1a1a1a; /* Darker background for the header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 120px;  /* Size of the logo */
+  height: 120px; /* Height same as width to make it circular */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure the image covers the circle shape */
+  margin-right: 20px;  /* Space between the logo and the title */
+}
+
+.company-title {
+  text-align: center;
+  font-family: 'Merriweather', serif; /* Different font for the company title */
+  font-size: 24px; /* Slightly larger font size */
+  font-weight: 700; /* Bold font weight */
+  color: #fff; /* White text for the company title */
+}
+
+/* Profile Container Styles */
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* Adjusts space above the image */
+  margin: 0;
+  background-color: #2c2c2c; /* Dark background */
+}
+
+/* Profile Picture Styles */
+.profile-pic img {
+  width: 200px; /* Increased size */
+  height: 200px; /* Increased size */
+  border-radius: 50%; /* Make it circular */
+  object-fit: cover; /* Ensure the image covers the circle shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for better appearance */
+  margin-bottom: 20px; /* Space below the image for the about section */
+}
+
+/* About Section Styles */
+.about-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows the columns to wrap on smaller screens */
+  justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-section-english, .about-section-nepali {
+  flex: 1;
+  margin: 10px;
+  padding: 20px;
+  background-color: #3a3a3a; /* Slightly lighter dark background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for better appearance */
+  border-radius: 10px; /* Optional: Add rounded corners */
+  text-align: left; /* Align text to the left for better readability */
+  min-width: 280px; /* Ensures columns don't get too narrow */
+  font-family: 'Lato', sans-serif; /* Applying the new font */
+  color: #fff; /* White text for better readability */
+}
+
+/* Contact Section Styles */
+.contact-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #3a3a3a; /* Slightly lighter dark background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for better appearance */
+  border-radius: 10px; /* Optional: Add rounded corners */
+}
+
+.map-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #1a1a1a; /* Darker background for the footer */
+  color: white; /* White text for contrast */
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Lato', sans-serif; /* Applying the new font */
+}
+
+.footer .contact-info h2 {
+  margin: 10px 0;
+  font-weight: 700; /* Bold font weight */
+}
+
+.footer .contact-info p {
+  margin: 5px 0;
+}
+
+.footer a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
